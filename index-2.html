@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Css/all.min.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
+    <link rel="stylesheet" href="./css/weather-icons.min.css" />
+    <title>Weather api</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- search city -->
+      <h1>Babelon Weather</h1>
+      <form class="input-city">
+        <label for="city">Enter a location for weather information</label>
+        <input type="text" name="city" />
+      </form>
+
+      <div class="container d-none">
+        <!-- Main info -------------->
+        <div class="main-info">
+          <div class="day-info">
+            <h5>Day</h5>
+            <h5>Hr</h5>
+          </div>
+          <div class="main-img">
+            <img src="./newImg/night.svg" alt="" />
+            <div class="main-icon">
+              <img src="./newImg/icons/15.svg" alt="" />
+            </div>
+            <div class="details">
+              <h5>City Name</h5>
+              <div>Weather Condition</div>
+              <div>
+                <span>Temp</span>
+                <span>&deg C</span>
+              </div>
+            </div>
+          </div>
+          <div class="display-more">
+            <i class="fas fa-arrow-right icon"></i>
+            <span>View more..</span>
+          </div>
+        </div>
+        <!--- additional info -->
+        <div class="add-info d-none">
+          <div>
+            <span>Feels Like</span>
+            <h5>20 &deg C</h5>
+          </div>
+          <div>
+            <!-- icon -->
+            <span>Humudity</span>
+            <h5>54 %</h5>
+          </div>
+          <div>
+            <!-- icon -->
+            <span>Visibility</span>
+            <h5>3 km</h5>
+          </div>
+          <div>
+            <!-- icon -->
+            <span>wind speed</span>
+            <h5>5 km/hr</h5>
+          </div>
+          <div>
+            <!-- icon -->
+            <span>Pressure</span>
+            <h5>5 hPa</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <script src="weather.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
